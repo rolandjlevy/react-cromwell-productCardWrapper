@@ -1,0 +1,28 @@
+main {
+  margin: 20px;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+main details pre {
+  text-align: left;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+details pre {
+  max-width: 300px;
+  white-space: pre-wrap;
+}
