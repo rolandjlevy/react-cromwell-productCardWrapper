@@ -1,17 +1,13 @@
-## Running React on Repl.it
+# Inversion of Control
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+- Problem: ProductCard component currently has 19 props and getting more and more bloated. Content is conditionally rendered based on prop values. There are 8 instances of ProductCard.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+- Aim: to decouple ProductCard from the business logic within props and make it as dumb as possible. 
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+- instead of passing in the logic through ProductCard's props we keep it outside ProductCard and just pass any dependancies down through the children
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+- Using inversion of control means we can control the logic and content within the wrappers. The order of the sections is whatever we want.
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
-
-### Typescript
-
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+### Links
+- https://www.lorenzweiss.de/inversion_of_control_with_react_components/
+- https://www.smashingmagazine.com/2021/08/react-children-iteration-methods/ 
